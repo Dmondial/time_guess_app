@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="time_guess.css">
+  <script src="time_guess.js"></script>
+  <title>時間あてゲーム</title>
+</head>
+<body>
+  <div class="contents">
+    <div class="title">
+      <h1>時間あてゲーム！</h1>
+    </div>
+    <div class="content">
+      <div class="explain">
+        10秒ぴったりで止めろ
+      </div>
+      <div class="timer">
+        いい感じのタイマー
+        <div class="min" id="min">00</div>
+        <div class="sec" id="sec">00</div>
+        <div class="msec" id="msec">00</div>
+
+      </div>
+      <div class="button">
+        <input type="button" value="スタート" id="start_button" data-check="start">
+      </div>
+      <div class="button">
+        <input type="button" value="ストップ" id="stop_button" data-check="stop">
+      </div>
+      <div class="button">
+        <input type="button" value="リセット" id="reset_button" data-check="reset">
+      </div>
+      <div class="result">
+        押して
+      </div>
+    </div>
+  </div>
+</body>
+</html>

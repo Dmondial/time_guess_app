@@ -1,0 +1,26 @@
+.contents{
+  background-color:aqua;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.title{
+  background-color: blue;
+}
+.content{
+  background-color: blueviolet;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.explain{
+  background-color: brown;
+}
+.button{
+  background-color: burlywood;
+}
+.result{
+  background-color: chocolate;
+}
