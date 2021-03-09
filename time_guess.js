@@ -5,7 +5,7 @@ function timer(){
   let sec = document.getElementById("sec");
   let min = document.getElementById("min");
 
-  if(Number(msec.innerHTML) < 9){
+  if(Number(msec.innerHTML) < 99){
     msec.innerHTML = addZero((Number(msec.innerHTML) + 1 ));
   } else {
     msec.innerHTML = "00";
@@ -35,7 +35,7 @@ function buttonAction(){
       const stopButton = document.getElementById("stop_button");
 
       startButton.addEventListener("click",()=>{
-          start = setInterval(timer, 100)
+          start = setInterval(timer, 10)
           console.log(startButton);
           timeFlag = 1;
           startButton.setAttribute("style","display:none");
