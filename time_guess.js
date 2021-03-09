@@ -32,18 +32,21 @@ function buttonAction(){
 
   let timeFlag = 0;
       const startButton = document.getElementById("start_button");
+      const stopButton = document.getElementById("stop_button");
+
       startButton.addEventListener("click",()=>{
           start = setInterval(timer, 100)
+          console.log(startButton);
           timeFlag = 1;
+          startButton.setAttribute("style","display:none");
+          stopButton.removeAttribute("style");
       });
     
-      const stopButton = document.getElementById("stop_button");
       stopButton.addEventListener("click",()=>{
-          console.log(stopButton);
-          console.log(start);
-
           clearInterval(start);
           timeFlag = 0;
+          stopButton.setAttribute("style","display:none");
+          startButton.removeAttribute("style");
       });
 
       const resetButton = document.getElementById("reset_button");
